@@ -1,0 +1,137 @@
+﻿@{
+    ViewBag.Title = "Registration";
+}
+
+<h2>Please fill the form to register!</h2>
+
+<form action="/Home/Summary" method="post">
+    <ul class="regTbl">
+        <li class="regTblRow">
+            <label class="regTblLbl" for="firstName">First Name: </label>
+            <input class="regTblCell" 
+                   type="text" 
+                   pattern="^([a-zA-Z]{1,25})$"
+                   title="Must be between 1-25 characters"
+                   name="firstName" 
+                   id="firstName"
+                   placeholder="Enter Here"
+                   required="required" />
+        </li>
+        <li class="regTblRow">
+            <div class="regTblCell"><br /></div>
+            <div class="regTblCell"><br /></div>
+        </li>
+        <li class="regTblRow">
+            <label class="regTblLbl" for="lastName">Last Name: </label>
+            <input class="regTblCell" 
+                   type="text" 
+                   pattern="^([a-zA-Z]{1,25})$"
+                   title="Must be between 1-25 characters"
+                   name="lastName" 
+                   id="lastName"
+                   placeholder="Enter Here"
+                   required="required" />
+        </li>
+        <li class="regTblRow">
+            <div class="regTblCell"><br /></div>
+            <div class="regTblCell"><br /></div>
+        </li>
+        <li class="regTblRow">
+            <label class="regTblLbl" for="email">Email: </label>
+            <input class="regTblCell" 
+                   type="email" 
+                   name="email" 
+                   id="email"
+                   placeholder="Enter Here"
+                   required="required" />
+        </li>
+        <li class="regTblRow">
+            <div class="regTblCell"><br /></div>
+            <div class="regTblCell"><br /></div>
+        </li>
+        <li class="regTblRow">
+            <label class="regTblLbl" for="phone">Phone: </label>
+            <input class="regTblCell"
+                   type="tel"
+                   pattern="^(1?)([\-]?)([\(]?)([1-9]{1})(\d{2})([\)]?)([\-]?)(\d{3})([\-]?)(\d{4})$"
+                   title="Must be in the following format ['-' and '()' not necessary]: xxx-xxx-xxxx"
+                   name="phone"
+                   id="phone"
+                   placeholder="Enter Here"
+                   required="required" />
+        </li>
+        <li class="regTblRow">
+            <div class="regTblCell"><br /></div>
+            <div class="regTblCell"><br /></div>
+        </li>
+        <li class="regTblRow">
+            <label class="regTblLbl" for="password">Password: </label>
+            <input class="regTblCell"
+                   type="password"
+                   pattern="^(?=.{4,8})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(^[a-zA-Z0-9\$=!.:#%]{4,8}$)"
+                   title="Password must be 4-8 characters, and must include atleast 1 uppercase letter, 1 lowercase letter, and 1 numerical digit. The following special characters are approved at max (2): \$=!.:#% "
+                   name="password"
+                   id="password"
+                   placeholder="Enter Here"
+                   required="required" />
+        </li>
+        <li class="regTblRow">
+            <div class="regTblCell"><br /></div>
+            <div class="regTblCell"><br /></div>
+        </li>
+        <li class="regTblRow">
+            <div class="regTblCell"><br /></div>
+            <input id="submit" type="submit" value="Submit" />
+        </li>
+    </ul>
+
+</form>
+<style>
+    input:invalid {
+        border-color: red;
+    }
+
+    input,
+    input:valid {
+        border-color: #ccc;
+    }
+    body {
+        background-color: #9d9d9d;
+    }
+    div.container.body-content {
+
+    }
+    h2 {
+        text-align: center;
+        background-color: #518080;
+        margin-top:0%;
+        margin-left:0%;
+        margin-right:0%;
+        color: #222222;
+        padding: 10px;
+    }
+    .regTbl {
+
+        margin: 0 auto;
+        list-style: none;
+        display: table;
+    }
+
+    .regTblRow {
+        text-align: right;
+        display: table-row;
+        line-height: 125%;
+    }
+    .regTblLbl, .regTblCell, #submit {
+        display: table-cell;
+        padding-right: 15px;
+    }
+    #submit {
+        float: right;
+    }
+
+    submit:hover {
+        background-color: darkslategray;
+        color: forestgreen;
+    }
+</style>
