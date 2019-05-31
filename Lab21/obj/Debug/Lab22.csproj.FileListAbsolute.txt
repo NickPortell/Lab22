@@ -74,3 +74,7 @@ C:\GrandCircus\Documents\Lab exercises\Lab22\Lab21\obj\Debug\Lab22.csproj.CoreCo
 C:\GrandCircus\Documents\Lab exercises\Lab22\Lab21\obj\Debug\Lab22.csproj.CopyComplete
 C:\GrandCircus\Documents\Lab exercises\Lab22\Lab21\obj\Debug\Lab21.dll
 C:\GrandCircus\Documents\Lab exercises\Lab22\Lab21\obj\Debug\Lab21.pdb
+C:\GrandCircus\Documents\Lab exercises\Lab22\Lab21\bin\EntityFramework.dll
+C:\GrandCircus\Documents\Lab exercises\Lab22\Lab21\bin\EntityFramework.SqlServer.dll
+C:\GrandCircus\Documents\Lab exercises\Lab22\Lab21\bin\EntityFramework.xml
+C:\GrandCircus\Documents\Lab exercises\Lab22\Lab21\bin\EntityFramework.SqlServer.xml
